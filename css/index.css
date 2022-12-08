@@ -1,26 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 .container{
     width: 100vw;
     height: 100vh;
 }
 .nav{
-    border-bottom: 2px solid rgb(61, 61, 243);
+    border-bottom: 2px solid rgb(201, 194, 194);
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-}
-.nav img{
-    padding-left: 40px;
-}
-.links{
-    margin-top: 20px;
+    background: rgb(255, 255, 255);
+    padding: 10px 30px;
+    height: 95px;
+    margin-right: 20px;
 }
 .links li{
     list-style: none;
+    margin-top: 20px;
 }
 .links li a{
     text-decoration: none;
@@ -34,8 +38,9 @@
 }
 .signin-up{
     display: flex;
-    column-gap: 30px;
+    column-gap: 15px;
     padding: 5px;
+    margin: 18px 0px;
     color: rgb(61, 61, 243);
     font-size: 20px;
     border: 5px;
@@ -45,12 +50,15 @@
     background: rgb(61, 61, 243);
     border-radius: 10px;
     text-align: center;
+    justify-content: center;
     color: #fff;
-    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 .sign-in{
     border-radius: 10px;
     text-align: center;
     color: rgb(61, 61, 243);
-    padding: 15px;
+    justify-content: center;
 }
