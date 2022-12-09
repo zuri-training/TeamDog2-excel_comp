@@ -45,7 +45,11 @@
         </div>
         <div class="signup-data">
             <h1>SIGN UP</h1>
-            <P>create an account for free</P>
+            <P class="create">create an account for free</P>
+            <button type="button" class="login-with-google-btn" >
+                Sign in with Google
+            </button>
+            <p>---- or ----</p>
             <form action="#">
                 <div class="field-group">
                     <label for="firstname">First Name</label>
@@ -66,10 +70,13 @@
                 <div class="field-group">
                     <label for="password">Retype Password</label>
                     <input type="text" id="password" name="password" required>
+                    <button class="create-account">Create Account</button>
                 </div>
-                <button>Create Account</button>
-                <p class="agree">By creating an accont, you agree to our <span>Terms Of Use</span> and <span>Privacy Policy</span></p>
-                <p>Already have an account? <a href="#">Sign In</a></p>
+
+                <div class="others-form">
+                    <p class="agree">By creating an accont, you agree to our <span>Terms Of Use</span> and <span>Privacy Policy</span></p>
+                    <p class="signin">Already have an account? <a href="#">Sign In</a></p>
+                </div>
             </form>
         </div>
     </div>
