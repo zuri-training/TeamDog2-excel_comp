@@ -19,7 +19,7 @@ body{
     justify-content: space-between;
     background: rgb(255, 255, 255);
     padding: 10px 30px;
-    height: 95px;
+    height: 20%vh;
     margin-right: 20px;
 }
 .links li{
@@ -64,6 +64,7 @@ body{
 .home{
     display: flex;
     justify-content: space-between;
+    height: 80%vh;
 }
 .home-text{
     position: relative;
@@ -79,7 +80,7 @@ body{
     margin-right: 20px;
     width: 45%;
     height: 450px;
-    top: 50px;
+    top: 40px;
 }
 .home button{
     margin-top: 40px;
@@ -197,4 +198,52 @@ body{
 }
 .others-form{
     margin-top: 30px;
+}
+
+.benefits{
+    background: rgb(90, 90, 206);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.benefits h2{
+    text-align: center;
+    margin-top: 40px;
+}
+.what-you-can-do{
+    text-align: center;
+    position: relative;
+    color: #fff;
+    display: flex;
+    margin-left: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+
+}
+.what-you-can-do img{
+    height: 200px;
+    position: relative;
+}
+.what-you-can-do .null{
+    top: 40px;
+}
+.what-you-can-do p{
+    padding: 50px;
+    font-size: 16px;
+    margin-top: 90px;
+}
+.what-you-can-do .two-1{
+    position: fixed;
+    left: 320px;
+    top: 250px;
+}
+.what-you-can-do .two-2{
+    position: absolute;
+    left: 920px;
+    top: 70px;
 }
