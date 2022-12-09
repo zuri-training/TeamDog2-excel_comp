@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XLSX COMPARE</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="{% static 'icons/XLSX.png' %}" alt="">
+            </div>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="signin-up">
+                <span class="sign-in">Sign In</span>
+                <span class="sign-up">Sign Up</span>
+            </div>
+        </div>
+        <div class="home">
+            <div class="home-text">
+                <h1>
+                    Spend less time <span>comparing</span> spreadsheets,<br>
+                    and more time <span>analazying</span> your insights
+                </h1>
+                <button>Try It Out</button>
+            </div>
+            <img src="{% static 'images/Hero Image.png' %}" alt="">
+        </div>
+        <div class="benefits">
+            <h2>Here's what you can do with XLSX CompareWiz</h2>
+            <div class="what-you-can-do">
+                <div class="what-1">
+                    <img  class="null" src="{% static 'images/spreadsheet1.png' %}" alt="">
+                    <p>Highlight duplicates in a single file</p>
+                </div>
+                <div class="what-2">
+                    <img  src="{% static 'images/spreadsheet1.png' %}" alt="">
+                    <img class="two-1" src="{% static 'images/spreadsheet1.png' %}" alt="">
+                    <p>Highlight duplicates and return two files</p>
+                </div>
+                <div class="what-3">
+                    <img  class="null" src="{% static 'images/spreadsheet2.png' %}" alt="">
+                    <p>Remove duplicates and return a single file</p>
+                </div>
+                <div class="what-4">
+                    <img src="{% static 'images/spreadsheet2.png' %}" alt="">
+                    <img class="two-2" src="{% static 'images/spreadsheet2.png' %}" alt="">
+                    <p>Remove duplicates and returns two files</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="{% static 'js/signUp.js' %}"></script>
+</body>
+</html>

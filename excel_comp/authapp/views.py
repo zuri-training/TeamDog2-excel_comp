@@ -5,7 +5,7 @@ from django.contrib.auth import authenticate, logout
 
 # Create your views here.
 def home(request):
-    pass
+    return render(request, 'index.html')
 
 
 def register(request):
