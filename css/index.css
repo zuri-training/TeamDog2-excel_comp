@@ -45,6 +45,13 @@ body{
     border: 5px;
     font-weight: bold;
 }
+.signin-up:hover{
+    cursor: pointer;
+}
+.sign-up a{
+    text-decoration: none;
+    color: #fff;
+}
 .sign-up{
     background: rgb(61, 61, 243);
     border-radius: 10px;
@@ -53,6 +60,10 @@ body{
     color: #fff;
     padding: 5px 10px 5px 10px;
     cursor: pointer;
+}
+.sign-in a{
+    text-decoration: none;
+    color: rgb(43, 43, 223);
 }
 .sign-in{
     border-radius: 10px;
@@ -239,37 +250,118 @@ body{
 }
 .works{
     position: relative;
-    max-height: 100vh;
-    max-width: 100vw;
-    padding: 50px;
+    max-height: 670px;
+    width: 100%;
 }
 .works .text{
+    padding-top: 80px;
     text-align: center;
     line-height: 55px;
     font-size: 18px;
     color: rgb(61, 61, 243);
+
 }
 .works .text p{
     font-weight: bolder;
+
 }
 .steps{
     display: flex;
     justify-content: space-between;
     height: 100vh;
-}
-.steps span{
     position: relative;
-    background: rgb(174, 174, 212);
+    top: 90px;
+}
+.steps .one{
+    text-align: center;
+}
+.steps .one h1{
+    display: inline-block;
+    width: 6.8em;
+    height: 6.8em;
+    line-height: 6.8em;
+    text-align: center;
+    background: rgb(163, 163, 211);
     border-radius: 50%;
-    padding: 80px 90px;
-    top: 100px;
-    font-size: 30px;
+    color: #fff;
 }
-.steps h4{
-    position: relative;
-
+.steps .one h4{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(49, 49, 187);
 }
-.steps p{
-    position: relative;
-    top: 200px;
+.steps .two{
+    text-align: center;
+}
+.steps .two h1{
+    background: rgb(117, 117, 199);
+    border-radius: 50%;
+    display: inline-block;
+    width: 6.8em;
+    height: 6.8em;
+    line-height: 6.8em;
+    text-align: center;
+    color: #fff;
+}
+.steps .two h4{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(49, 49, 187);
+}
+.steps .three{
+    text-align: center;
+}
+.steps .three h1{
+    background: rgb(49, 49, 187);
+    border-radius: 50%;
+    display: inline-block;
+    width: 6.8em;
+    height: 6.8em;
+    line-height: 6.8em;
+    text-align: center;
+    color: #fff;
+}
+.steps .three h4{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(49, 49, 187);
+}
+.action{
+    text-align: center;
+    height: 640px;
+}
+.action button{
+    margin: 18px 0px;
+    background: rgb(26, 26, 163);
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+.action p{
+    font-size: 24px;
+    padding: 15px;
+}
+.action p span{
+    color: rgb(37, 37, 197);
+}
+.action .play{
+    height: 530px;
+    width: 100%;
+    background: rgb(37, 37, 197);
+}
+.action .play i{
+    padding: 100px 270px;
+    background: rgb(201, 194, 194);
+    font-size: 9rem;
+    color: rgb(120, 120, 128);
+    margin-top: 40px;
+}
+.action .play h1{
+    color: #fff;
+    padding-top: 25px;
 }
