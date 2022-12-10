@@ -247,6 +247,7 @@ body{
     padding: 50px;
     font-size: 16px;
     margin-top: 40px;
+    font-weight: bold;
 }
 .works{
     position: relative;
@@ -254,7 +255,7 @@ body{
     width: 100%;
 }
 .works .text{
-    padding-top: 80px;
+    padding-top: 30px;
     text-align: center;
     line-height: 55px;
     font-size: 18px;
@@ -328,6 +329,9 @@ body{
     font-size: 20px;
     padding: 10px;
     color: rgb(49, 49, 187);
+}
+.steps p{
+    font-weight: bold;
 }
 .action{
     text-align: center;
