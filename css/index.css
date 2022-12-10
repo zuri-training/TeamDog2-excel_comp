@@ -264,7 +264,6 @@ body{
 }
 .works .text p{
     font-weight: bolder;
-
 }
 .steps{
     display: flex;
@@ -335,7 +334,7 @@ body{
 }
 .action{
     text-align: center;
-    height: 640px;
+    height: 660px;
 }
 .action button{
     margin: 18px 0px;
@@ -368,4 +367,79 @@ body{
 .action .play h1{
     color: #fff;
     padding-top: 25px;
+}
+
+footer{
+    border-top: 1px solid rgb(26, 26, 163);
+    margin-top: 10px;
+    height: 250px;
+    background: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+}
+footer .subscribe{
+    position: relative;
+    left: 300px;
+    padding: 50px 0px 20px 100px;
+    color: #464343;
+}
+footer .subscribe span{
+    color: rgb(26, 26, 163);
+    font-weight: 600;
+}
+footer .subscribe p{
+    margin-right: 70px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+footer .subscribe input{
+    border: 1px solid rgb(201, 194, 194);
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 500;
+}
+footer .subscribe input:focus{
+    border: 1px solid rgb(26, 26, 163);
+}
+footer .others{
+    height: 75px;
+    display: flex;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    font-size: 18px;
+    color: #464343;
+}
+footer .foot-header{
+    height: 175px;
+    display: flex;
+    position: relative;
+    font-size: 18px;
+}
+footer .foot-header .logo img{
+    padding: 20px 0px 25px 70px;
+}
+footer .foot-header .logo .links a{
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 50px;
+    color: #464343;
+    font-weight: 600;
+}
+footer .others .tandc a{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #464343;
+    font-weight: 600;
+}
+footer .others .copyright{
+    position: relative;
+    left: 400px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
 }
