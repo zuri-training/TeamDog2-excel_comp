@@ -443,3 +443,67 @@ footer .others .copyright{
     font-family: 'Lato', sans-serif;
     font-weight: 600;
 }
+
+.loginForm{
+    display: flex;
+    justify-content: space-between;
+}
+.loginForm .logo-img{
+    position: relative;
+    left: 150px;
+    margin-top: 70px;
+}
+.loginForm .logo-img img{
+    width: 450px;
+}
+.login-data{
+    background-color: rgb(189, 189, 228);
+    position: relative;
+    right: 150px;
+    width: 30%;
+    padding: 40px 40px 40px 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.login-data h1{
+    padding: 10px;
+}
+.login-data p{
+    color: rgb(26, 26, 163);
+    padding-bottom: 30px;
+}
+.login-data .field-group {
+    text-align: left;
+}
+.login-data .field-group #email{
+    margin: 10px 0px 10px 0px;
+}
+.login-data .field-group #password{
+    margin: 10px 0px 10px 0px;
+}
+.login-data span{
+    margin-left: 150px;
+    font-size: 14px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.login-data .login{
+    width: 100%;
+    background: rgb(26, 26, 163);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.login-data a{
+    text-decoration: none;
+}
+.login-data .login-with-google-btn{
+    margin-top: 20px;
+}
