@@ -11,7 +11,7 @@ body{
 }
 .container{
     width: 100vw;
-    height: 100vh;
+    max-height: 100vh;
 }
 .nav{
     border-bottom: 2px solid rgb(201, 194, 194);
@@ -45,6 +45,13 @@ body{
     border: 5px;
     font-weight: bold;
 }
+.signin-up:hover{
+    cursor: pointer;
+}
+.sign-up a{
+    text-decoration: none;
+    color: #fff;
+}
 .sign-up{
     background: rgb(61, 61, 243);
     border-radius: 10px;
@@ -53,6 +60,10 @@ body{
     color: #fff;
     padding: 5px 10px 5px 10px;
     cursor: pointer;
+}
+.sign-in a{
+    text-decoration: none;
+    color: rgb(43, 43, 223);
 }
 .sign-in{
     border-radius: 10px;
@@ -64,7 +75,8 @@ body{
 .home{
     display: flex;
     justify-content: space-between;
-    height: 80%vh;
+    max-height: 90%vh;
+    margin: 45px 0px;
 }
 .home-text{
     position: relative;
@@ -202,27 +214,26 @@ body{
 
 .benefits{
     background: rgb(90, 90, 206);
-    position: absolute;
+    position: relative;
     height: 100vh;
     width: 100vw;
-    margin-top: 60px;
+    margin-top: 65px;
     justify-content: center;
     align-items: center;
     color: #fff;
 }
 .benefits h2{
     text-align: center;
-    margin-top: 40px;
+    padding: 50px;
 }
 .what-you-can-do{
     text-align: center;
     position: relative;
     color: #fff;
     display: flex;
-    margin-left: 30px;
     justify-content: space-between;
     align-items: center;
-    margin-top: 90px;
+    margin: 100px 30px;
 
 }
 .what-you-can-do img{
@@ -235,15 +246,264 @@ body{
 .what-you-can-do p{
     padding: 50px;
     font-size: 16px;
-    margin-top: 90px;
+    margin-top: 40px;
+    font-weight: bold;
 }
-.what-you-can-do .two-1{
-    position: fixed;
-    left: 320px;
-    top: 250px;
+.works{
+    position: relative;
+    max-height: 670px;
+    width: 100%;
 }
-.what-you-can-do .two-2{
-    position: absolute;
-    left: 920px;
-    top: 70px;
+.works .text{
+    padding-top: 30px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 18px;
+    color: rgb(61, 61, 243);
+
+}
+.works .text p{
+    font-weight: bolder;
+}
+.steps{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+    top: 90px;
+}
+.steps .one{
+    text-align: center;
+}
+.steps .one h1{
+    display: inline-block;
+    width: 6.8em;
+    height: 6.8em;
+    line-height: 6.8em;
+    text-align: center;
+    background: rgb(163, 163, 211);
+    border-radius: 50%;
+    color: #fff;
+}
+.steps .one h4{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(49, 49, 187);
+}
+.steps .two{
+    text-align: center;
+}
+.steps .two h1{
+    background: rgb(117, 117, 199);
+    border-radius: 50%;
+    display: inline-block;
+    width: 6.8em;
+    height: 6.8em;
+    line-height: 6.8em;
+    text-align: center;
+    color: #fff;
+}
+.steps .two h4{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(49, 49, 187);
+}
+.steps .three{
+    text-align: center;
+}
+.steps .three h1{
+    background: rgb(49, 49, 187);
+    border-radius: 50%;
+    display: inline-block;
+    width: 6.8em;
+    height: 6.8em;
+    line-height: 6.8em;
+    text-align: center;
+    color: #fff;
+}
+.steps .three h4{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(49, 49, 187);
+}
+.steps p{
+    font-weight: bold;
+}
+.action{
+    text-align: center;
+    height: 660px;
+}
+.action button{
+    margin: 18px 0px;
+    background: rgb(26, 26, 163);
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+.action p{
+    font-size: 24px;
+    padding: 15px;
+}
+.action p span{
+    color: rgb(37, 37, 197);
+}
+.action .play{
+    height: 530px;
+    width: 100%;
+    background: rgb(37, 37, 197);
+}
+.action .play i{
+    padding: 100px 270px;
+    background: rgb(201, 194, 194);
+    font-size: 9rem;
+    color: rgb(120, 120, 128);
+    margin-top: 40px;
+}
+.action .play h1{
+    color: #fff;
+    padding-top: 25px;
+}
+
+footer{
+    border-top: 1px solid rgb(26, 26, 163);
+    margin-top: 10px;
+    height: 250px;
+    background: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+}
+footer .subscribe{
+    position: relative;
+    left: 300px;
+    padding: 50px 0px 20px 100px;
+    color: #464343;
+}
+footer .subscribe span{
+    color: rgb(26, 26, 163);
+    font-weight: 600;
+}
+footer .subscribe p{
+    margin-right: 70px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+footer .subscribe input{
+    border: 1px solid rgb(201, 194, 194);
+    height: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 500;
+}
+footer .subscribe input:focus{
+    border: 1px solid rgb(26, 26, 163);
+}
+footer .others{
+    height: 75px;
+    display: flex;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    font-size: 18px;
+    color: #464343;
+}
+footer .foot-header{
+    height: 175px;
+    display: flex;
+    position: relative;
+    font-size: 18px;
+}
+footer .foot-header .logo img{
+    padding: 20px 0px 25px 70px;
+}
+footer .foot-header .logo .links a{
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 50px;
+    color: #464343;
+    font-weight: 600;
+}
+footer .others .tandc a{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #464343;
+    font-weight: 600;
+}
+footer .others .copyright{
+    position: relative;
+    left: 400px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+.loginForm{
+    display: flex;
+    justify-content: space-between;
+}
+.loginForm .logo-img{
+    position: relative;
+    left: 150px;
+    margin-top: 70px;
+}
+.loginForm .logo-img img{
+    width: 450px;
+}
+.login-data{
+    background-color: rgb(189, 189, 228);
+    position: relative;
+    right: 150px;
+    width: 30%;
+    padding: 40px 40px 40px 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.login-data h1{
+    padding: 10px;
+}
+.login-data p{
+    color: rgb(26, 26, 163);
+    padding-bottom: 30px;
+}
+.login-data .field-group {
+    text-align: left;
+}
+.login-data .field-group #email{
+    margin: 10px 0px 10px 0px;
+}
+.login-data .field-group #password{
+    margin: 10px 0px 10px 0px;
+}
+.login-data span{
+    margin-left: 150px;
+    font-size: 14px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.login-data .login{
+    width: 100%;
+    background: rgb(26, 26, 163);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.login-data a{
+    text-decoration: none;
+}
+.login-data .login-with-google-btn{
+    margin-top: 20px;
 }
