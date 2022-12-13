@@ -42,9 +42,7 @@ INSTALLED_APPS = [
     "django_extensions",
     "excelcomparison_app",
     "authapp",
-    "excelcomparison_app",
-    "upload",
-    "authapp"
+    "upload"
 ]
 
 MIDDLEWARE = [

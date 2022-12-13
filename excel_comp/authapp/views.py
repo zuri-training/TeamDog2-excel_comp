@@ -42,8 +42,7 @@ def login(request):
         if user is not None:
             auth.login(request, user)
             messages.info(request, "Login successful")
-            #return redirect("nextpage")
-            return redirect("login")
+            return redirect("../upload")
         else:
             messages.info(request, "Invalid credentials")
             return redirect("login")
