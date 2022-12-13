@@ -1,39 +1,9 @@
 asgiref==3.5.2
-brotlipy==0.7.0
-certifi==2021.10.8
-cffi @ file:///C:/ci_310/cffi_1642682485096/work
-charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
-colorama @ file:///tmp/build/80754af9/colorama_1607707115595/work
-conda==4.12.0
-conda-content-trust @ file:///tmp/build/80754af9/conda-content-trust_1617045594566/work
-conda-package-handling @ file:///C:/ci/conda-package-handling_1649106011304/work
-cryptography @ file:///C:/ci/cryptography_1639414720302/work
-distlib==0.3.6
-Django==4.1.2
+Django==4.1.4
 django-extensions==3.2.1
-djangorestframework==3.14.0
-Faker==15.1.1
-filelock==3.8.0
-idna @ file:///tmp/build/80754af9/idna_1637925883363/work
-menuinst @ file:///C:/ci/menuinst_1631733438520/work
-pipenv==2022.10.25
-platformdirs==2.5.2
-pycosat==0.6.3
-pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
-pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
-PySocks @ file:///C:/ci/pysocks_1605307512533/work
-python-dateutil==2.8.2
 python-decouple==3.6
 pytz==2022.6
 pywin32==302
-requests @ file:///opt/conda/conda-bld/requests_1641824580448/work
-ruamel-yaml-conda @ file:///C:/ci/ruamel_yaml_1616016898638/work
-six @ file:///tmp/build/80754af9/six_1644875935023/work
 sqlparse==0.4.3
-tqdm @ file:///opt/conda/conda-bld/tqdm_1647339053476/work
-tzdata==2022.5
-urllib3 @ file:///opt/conda/conda-bld/urllib3_1643638302206/work
-virtualenv==20.16.6
-virtualenv-clone==0.5.7
-win-inet-pton @ file:///C:/ci/win_inet_pton_1605306162074/work
+tzdata==2022.7
 wincertstore==0.2
