@@ -345,6 +345,10 @@ body{
     border-radius: 5px;
     padding: 10px;
 }
+.action a{
+    text-decoration: none;
+    color: #fff;
+}
 .action p{
     font-size: 24px;
     padding: 15px;
@@ -371,10 +375,11 @@ body{
 
 footer{
     border-top: 1px solid rgb(26, 26, 163);
-    margin-top: 10px;
+    margin-top: 0px;
     height: 250px;
     background: rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
+
 }
 footer .subscribe{
     position: relative;
@@ -515,4 +520,71 @@ footer .others .copyright{
     text-align: center;
     padding: 30px;
     font-size: 20px;
+}
+
+.up{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px 0px 100px
+}
+.up .question{
+    margin-top: 25px;
+}
+.up .question h1{
+    padding: 15px;
+}
+.up .question .color{
+    color: rgb(26, 26, 163);
+}
+.down{
+    background: rgb(88, 88, 203);
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+}
+.down .details{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px 40px 100px;
+    color: #fff;
+}
+.down .details .location{
+    padding: 10px;
+    display: flex;
+}
+.down .details .location i{
+    margin-right: 30px;
+}
+.down .form{
+    position: relative;
+    right: 100px;
+    width: 350px;
+    background: rgb(189, 189, 228);
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin: 10px 0px 10px 0px;
+    color: #fff;
+}
+.down .form-details{
+    justify-content: left;
+    margin: 10px;
+    display: flex;
+    width: 300px;
+}
+.down .form-details #name, #email{
+    height: 30px;
+}
+.down .form-details #message{
+    height: 60px;
+}
+.down button{
+    padding: 7px;
+    background: rgb(37, 37, 197);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
 }
