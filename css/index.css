@@ -10,7 +10,7 @@ body{
     overflow-x: hidden;
 }
 .container{
-    width: 100vw;
+    width: 100%;
     max-height: 100vh;
 }
 .nav{
@@ -598,4 +598,12 @@ footer .others .copyright{
 	font-style: italic;
 	color: hsl(0, 0%, 100%);
 	font-weight: 500;
+}
+
+
+
+/* I want to try media query */
+
+@media only screen and (min-width: 1000px){
+
 }
