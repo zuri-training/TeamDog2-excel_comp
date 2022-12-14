@@ -170,12 +170,13 @@ body{
     background: #9598DA;
     border-radius: 5px;
     width: 50%;
-    height: 650px;
+    height: 750px;
     margin-left: 250px;
-    padding-bottom: 200px;
+    padding-bottom: 10px;
     padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
+
 }
 .signup-data span, .create, a{
     color: rgb(61, 61, 243);
@@ -587,4 +588,14 @@ footer .others .copyright{
     border-radius: 5px;
     position: absolute;
     right: 10px;
+}
+.error-text{
+	display: none;
+}
+.error-text{
+	text-align: right;
+	font-size: .8rem;
+	font-style: italic;
+	color: hsl(0, 0%, 100%);
+	font-weight: 500;
 }
