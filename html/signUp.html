@@ -40,23 +40,28 @@
                 <form name="SignUP" onsubmit="" action="#">
                     <div class="field-group">
                         <label for="firstname">First Name</label>
-                        <input type="text" id="firstname" name="firstname" required>
+                        <input type="text" id="firstname" name="firstname">
+                        <p class="error-text">First Name cannot be empty</p>
                     </div>
                     <div class="field-group">
                         <label for="lastname">Last Name</label>
-                        <input type="text" id="lastname" name="lastname" required>
+                        <input type="text" id="lastname" name="lastname">
+                        <p class="error-text">Last Name cannot be empty</p>
                     </div>
                     <div class="field-group">
                         <label for="email">Email</label>
-                        <input type="text" id="email" name="email" required>
+                        <input type="text" id="email" name="email">
+                        <p class="error-text">Email cannot be empty</p>
                     </div>
                     <div class="field-group">
                         <label for="password">Password</label>
-                        <input type="text" id="password" name="password" required>
+                        <input type="text" id="password" name="password" >
+                        <p class="error-text">Password cannot be empty</p>
                     </div>
                     <div class="field-group">
                         <label for="password">Retype Password</label>
-                        <input type="text" id="password" name="password" required>
+                        <input type="text" id="password" name="password">
+                        <p class="error-text">Password cannot be empty</p>
                         <button type="submit" name="submit" value="submit" class="create-account">Create Account</button>
                     </div>
 
@@ -68,5 +73,6 @@
             </div>
         </div>
     </div>
+    <script src="reg.js"></script>
 </body>
 </html>

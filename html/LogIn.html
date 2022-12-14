@@ -33,14 +33,14 @@
             <div class="login-data">
                 <h1>Welcome Back</h1>
                 <P class="login-text">Login to your account for free</P>
-                <form name="signin" onsubmit="" action="#">
+                <form name="signin" onsubmit="check()" action="post">
                     <div class="field-group">
                         <label for="email">Email</label>
                         <input type="text" id="email" name="email" required>
                     </div>
                     <div class="field-group">
                         <label for="password">Password</label>
-                        <input type="text" id="password" name="password" required>
+                        <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                     </div>
                     <!-- <span>FORGOT PASSWORD?</span> -->
                     <!-- <p class="Forgot password?"><a href="{% url 'password_reset' %}">Forgotten Password?</a></p> -->
@@ -58,5 +58,6 @@
 
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
