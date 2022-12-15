@@ -461,6 +461,7 @@ footer .others .copyright{
 }
 .loginForm .logo-img img{
     width: 450px;
+    position: relative;
 }
 .login-data{
     background-color: rgb(189, 189, 228);
