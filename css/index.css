@@ -605,6 +605,186 @@ footer .others .copyright{
 
 /* I want to try media query */
 
-@media only screen and (min-width: 1000px){
+@media only screen and (max-width: 1000px){
 
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 400px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        flex-direction: column;
+        width: auto;
+        text-align: center;
+    }
+    .home{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .home-text{
+        top: 0;
+    }
+    .home img{
+        width: 600px;
+        margin: 0 auto;
+    }
+    .signin-up{
+        flex-direction: column;
+    }
+    .benefits{
+        width: fit-content;
+    }
+    .what-you-can-do{
+        margin-top: 0;
+        font-size: 10px;
+        margin-left: 0;
+    }
+    .what-you-can-do img{
+        width: 150px;
+        height: 150px;
+
+    }
+    .fa-sharp{
+        position: relative;
+        top: 130px;
+    }
+    .foot-header .subscribe{
+        position: relative;
+        left: 10px;
+    }
+    .others p{
+       right: 20px;
+    }
+}
+
+@media only screen and (max-width: 730px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 400px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        flex-direction: column;
+        width: auto;
+        text-align: center;
+    }
+    .home{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .home-text{
+        top: 0;
+    }
+    .home img{
+        width: 600px;
+        margin: 0 ;
+    }
+    .signin-up{
+        flex-direction: column;
+    }
+    .benefits{
+        width: fit-content;
+        right: 160px;
+        text-align: center;
+    }
+    .works{
+        right: 110px;
+        margin-bottom: 70px;
+    }
+    .works .text{
+        margin-left: 210px;
+    }
+    .what-you-can-do{
+        margin-top: 0;
+        font-size: 10px;
+        margin-left: 0;
+    }
+    .what-you-can-do img{
+        width: 150px;
+        height: 150px;
+
+    }
+    .action{
+        position: relative;
+        width: fit-content;
+
+    }
+    .foot-header .subscribe{
+        position: relative;
+        left: 10px;
+    }
+    .others p{
+       right: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 350px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        flex-direction: column;
+        width: auto;
+        text-align: center;
+    }
+    .home{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .home-text{
+        top: 0;
+    }
+    .home img{
+        width: 600px;
+        margin: 0px;
+
+    }
+    .signin-up{
+        flex-direction: column;
+    }
+    .benefits{
+        width: fit-content;
+    }
+    .what-you-can-do{
+        margin-top: 0;
+        font-size: 10px;
+        margin-left: 0;
+    }
+    .what-you-can-do img{
+        width: 150px;
+        height: 150px;
+
+    }
+    .fa-sharp{
+        position: relative;
+        top: 130px;
+
+    }
+    .foot-header .subscribe{
+        position: relative;
+        left: 10px;
+    }
+    .others p{
+       right: 20px;
+    }
 }
