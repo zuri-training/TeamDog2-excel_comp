@@ -621,6 +621,12 @@ footer .others .copyright{
         width: auto;
         text-align: center;
     }
+    .loginForm{
+        flex-direction: column;
+    }
+    .signUpForm{
+        flex-direction: column;
+    }
     .home{
         flex-direction: column;
         align-items: center;
@@ -677,6 +683,15 @@ footer .others .copyright{
         flex-direction: column;
         width: auto;
         text-align: center;
+    }
+    .loginForm{
+        flex-direction: column;
+    }
+    .signUpForm{
+        flex-direction: column;
+    }
+    .signup-data{
+        opacity: 0;
     }
     .home{
         flex-direction: column;
@@ -744,6 +759,12 @@ footer .others .copyright{
         flex-direction: column;
         width: auto;
         text-align: center;
+    }
+    .loginForm{
+        flex-direction: column;
+    }
+    .signUpForm{
+        flex-direction: column;
     }
     .home{
         flex-direction: column;
