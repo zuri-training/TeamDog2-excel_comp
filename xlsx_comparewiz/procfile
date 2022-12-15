@@ -1,0 +1,1 @@
+web: gunicorn xlsx_comparewiz.wsgi
