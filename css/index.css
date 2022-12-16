@@ -8,10 +8,10 @@
 body{
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+
 }
 .container{
-    width: 100%;
-    max-height: 100vh;
+    height: 100vh;
 }
 .nav{
     border-bottom: 2px solid rgb(201, 194, 194);
@@ -20,7 +20,8 @@ body{
     background: rgb(255, 255, 255);
     padding: 10px 30px;
     height: 20%vh;
-    margin-right: 20px;
+    margin-right: 0px;
+
 }
 .links li{
     list-style: none;
