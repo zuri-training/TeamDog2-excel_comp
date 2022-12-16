@@ -772,6 +772,7 @@ footer .others .copyright{
         width: auto;
         text-align: center;
         width: 1000px;
+        font-size: 18px;
     }
     .loginForm{
         flex-direction: column;
