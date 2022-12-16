@@ -14,7 +14,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 10px 0;
+    padding: 10px 0;
 }
 .container{
     width: 100vw;
@@ -110,6 +110,10 @@ body{
     background: #2B31B4;
     border: none;
     border-radius: 5px;
+}
+.home button a{
+    color: #fff;
+    text-decoration: none;
 }
 .home button:hover{
     background: rgb(93, 93, 228);
