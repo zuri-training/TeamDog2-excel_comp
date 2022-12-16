@@ -761,7 +761,7 @@ footer .others .copyright{
     .container{
         display: flex;
         flex-direction: column;
-        margin: 0px 0px 0px 350px;
+        margin: 10px 0px 0px 0px;
     }
     footer{
         display: flex;
@@ -771,6 +771,7 @@ footer .others .copyright{
         flex-direction: column;
         width: auto;
         text-align: center;
+        width: 1000px;
     }
     .loginForm{
         flex-direction: column;
@@ -783,6 +784,7 @@ footer .others .copyright{
         align-items: center;
         justify-content: center;
         text-align: center;
+        width: 1000px;
     }
     .home-text{
         top: 0;
@@ -797,27 +799,51 @@ footer .others .copyright{
     }
     .benefits{
         width: fit-content;
+        height: 500px;
+        width: 800px;
+        margin-left: 250px;
     }
     .what-you-can-do{
         margin-top: 0;
         font-size: 10px;
-        margin-left: 0;
+        margin-left: 30px;
+
     }
     .what-you-can-do img{
         width: 150px;
         height: 150px;
-
     }
-    .fa-sharp{
+    .works{
+        width: 800px;
+        margin-left: 210px;
+        margin-bottom: 100px;
+    }
+    .works .text{
         position: relative;
-        top: 130px;
+        padding-right: 100px;
+        margin-right: 100px;
+    }
+    .action{
+        left: 180px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        border: none;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .foot-header{
 
+        border-top-width: ;
     }
     .foot-header .subscribe{
         position: relative;
-        left: 10px;
+        left: 400px;
     }
-    .others p{
-       right: 20px;
+    .copyright p{
+        position: relative;
+        right: -100px;
     }
+
 }
