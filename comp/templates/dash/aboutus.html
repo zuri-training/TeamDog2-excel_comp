@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>XLSX COMPAREWIZ | About Us</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="{% static 'icons/XLSX.png' %}" alt="">
+            </div>
+            <div class="links">
+                <!-- <ul>
+                    <li>
+                        <a href="../">Home</a>
+                        <a href="../about">About</a>
+                        <a href="../contact">Contact</a>
+                    </li>
+                </ul> -->
+            </div>
+            <div class="signin-up">
+                <!-- <span class="sign-in"> <a href="../login">Sign In</a> </span>
+                <span class="sign-up"><a href="../register" target="_self">Sign Up</a></span> -->
+            </div> {% if user.is_authenticated %}
+            <div class="nav-btn">
+                <h5 style="color: #003DB2; font-style: oblique;">{{ user.username }}</h5>
+                <!--<button class="sign-in">Sign In</button>
+                <button class="sign-up">Sign Up</button>-->
+            </div>
+            {% else %}
+            <div class="signin-up">
+                <a class = "sign-in" href="{% url 'login' %}">Sign In</a>
+                <a class = "sign-in" href="{% url 'Accounts-register' %}">Sign Up</a>
+                <!--<button class="sign-in">Sign In</button>
+                <button class="sign-up">Sign Up</button>-->
+            </div>
+            {% endif %}
+        </nav>
+
+
+
+        </div>
+        <div class="about-text">
+            <h1>Background</h1>
+            <p class= "about-info">The platform was created to provide a simple user friendly solution for comparing excel/spreadsheet files easily.it is targeted at users who requlary work with excel files and need a simple way to compare files or document with similar contents,check for differences and make simple changes like remove duplicates,remove empty cells,merge two files into one and download or save the file for future use. Our users are mainly accountants, and other sectors of finance which make use of spreadsheets for accountability and refined bookkeeping.
+            </p>
+        </div>
+        <footer>
+            <div class="foot-header">
+                <div class="logo">
+                    <img src="{% static 'icons/XLSX.png' %}" alt="">
+                    <div class="links">
+                        <a href="../">Home</a>
+                        <a href="../about">About</a>
+                        <a href="../contact">Help</a>
+                        <a href="">Support</a>
+                        <a href="">Tool</a>
+                    </div>
+                </div>
+                <div class="subscribe">
+                    <p>Get the latest new from us</p>
+                    <input type="newsletter" name="newsletter" placeholder="Your email adress">
+                    <span>Subscribe</span>
+                </div>
+            </div>
+            <div class="others">
+                <div class="tandc">
+                    <a href="">Terms and Conditions</a>
+                    <span>|</span>
+                    <a href="">Private Policy</a>
+                    <span>|</span>
+                </div>
+                <div class="copyright">
+                    <p>XLSX COMPAREWIZ 2022. All right reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

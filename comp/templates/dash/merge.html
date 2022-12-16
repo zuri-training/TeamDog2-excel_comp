@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+    </head>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+            max-width: 100%;
+            height: 100vh;
+            max-height: 100vh;
+            background-color: #fafafa;
+            color: #001847;
+
+
+        }
+
+
+        #navbar {
+            background-color: #fff;
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 3rem;
+        }
+
+        #xl-sweep-logo {
+            display: flex;
+            align-items: left;
+            justify-content: left;
+        }
+
+        #xl-logo {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            position: relative;
+        }
+
+        .green-logo {
+            position: absolute;
+            top: -25%;
+            left: -6%;
+        }
+
+        .logo {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .sweep {
+            font-size: 20px;
+            font-weight: 800;
+            color: #003DB1;
+            line-height: 23px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        li a {
+            margin-right: 20px;
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .info {
+            color: green;
+            font-weight: 160;
+        }
+
+        .topic {
+            color: #003DB1;
+            text-align: center;
+
+        }
+
+        .nav-btn button {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .sign-in {
+            background-color: #fff;
+            color: #003DB1;
+            border: 1px solid #003DB1;
+        }
+
+        .sign-up {
+            background-color: #003DB1;
+            color: #fff;
+            border: 1px solid #003DB1;
+        }
+
+        header {
+            background-color: #ffffff;
+            box-sizing: border-box;
+            border-bottom: 1px solid #B3B3B4;
+
+
+        }
+
+
+        .flexbox {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            width: fit-content;
+            margin: auto;
+
+
+        }
+
+        /*.first-box {}*/
+
+        .filename {
+            display: flex;
+            font-family: 'Space Grotesk';
+            width: 100%;
+            height: 64px;
+            background-color: #AAC2F1;
+            align-items: center;
+            position: relative;
+            bottom: 5px;
+            border-radius: 8px 8px 0 0;
+
+
+        }
+
+        
+        .p {
+            margin-left: 20px;
+        }
+
+        /*.btn {}
+
+
+        .second-box{}
+
+        .second-line {
+            width: 750px;;
+            height: 64px;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .second {
+            display: flex;
+            width: 750px;
+            height: 18px;
+
+        }*/
+
+        /*.right-topbox {
+
+            margin-left: 20px;
+
+        }
+
+
+        .middle-two {
+
+            margin-left: 20px;
+        }
+
+        .bottom-two {
+            margin-left: 20px;
+        }*/
+
+
+    
+       
+        .middle {
+            width: 650px;
+            height: 614px;
+            overflow: scroll;
+            position: relative;
+            margin-top: 5px;
+            background-color: #f5f5f5;
+        }
+
+        .down {
+            width: 650px;
+            height: 250px;
+            overflow: scroll;
+            position: relative;
+            margin-top: 46px;
+            left: 5%;
+            margin-bottom: 10px;
+            
+            
+        }
+
+        /*.bottom {
+            display: flex;
+            justify-content: center;
+            width: 700px;
+            height: 66px;
+            align-items: center;
+            overflow: scroll;
+            margin-top: 5px;
+            border-radius: 0 0 8px 8px;
+            background-color: #f5f5f5;
+        }*/
+       
+        .container {
+            min-height: 100%;
+            margin-top: 88px;
+            align-self: center;
+            
+        }
+        .main {
+            padding-bottom: 50px;
+        }
+        .download-one {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #download {
+            
+            width: 254px;
+            height: 45px;
+            border-radius: 8px;
+            border: none;
+            background-color: #003DB2;
+           
+            font-family: 'Space Grotesk';
+            color: whitesmoke;
+            cursor: pointer;
+            margin-top: 20px;
+            left: 100%;
+        }
+         .btn1{
+          background-color: #aac2f1;
+         }
+         .duplicates {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Space Grotesk';
+            left: 100%;
+            right: 20%;
+            margin-top: 45px;
+            padding-right: 20%;
+            
+            
+    
+        }
+
+        .lead {
+            color: #003DB2;
+        }
+
+        .footer-top li a {
+           margin-right: 30px;
+           margin-left: 30px;
+           text-decoration: none;
+           color: #000;
+           font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+         }
+        .footer-bottom {
+          display: flex;
+          justify-content: space-between;
+          font-family: 'Space Grotesk';
+          font-weight: 400;
+          font-size: 12px;
+          color: #001847;
+          line-height: 18px;
+           padding: 2rem 0.8rem;
+         }
+         .edge{
+                
+                right: 0%;
+                left: 100%;
+            }
+
+            .lit{
+            font-weight: 100;
+             font-size: 12px;
+            
+         }
+
+         .match {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+        
+         }
+
+
+         @media screen and (max-width:1200px){
+                
+
+                .down{
+                    width: 450px;
+                }
+
+                .middle{
+                    width: 550px;
+                }
+
+                
+            }
+
+            @media screen and (max-width:700px){
+
+                .duplicates{
+                    width: 30%;
+                }
+
+            }
+
+            @media screen and (max-width:600px){
+                footer, header{
+                    width: 600px;
+                }
+            }
+
+            
+            @media screen and (max-width:550px){
+                footer, header{
+                    width: 560px;
+                }
+                .duplicates{
+                   width: fit-content;
+                    margin-right: 10%;
+                    margin-left: 25%;
+                }
+
+                #download{
+                    width: 200px;
+                    margin-left: 30%;
+                }
+                
+            }
+
+            @media screen and (max-width:350px){
+
+                #download{
+                    
+                    margin-left: 300px;
+                }
+
+                .duplicates{
+                    display: none;
+                }
+                    
+                
+            }
+
+
+
+         
+    </style>
+
+    <body>
+        <header>
+            <nav id="navbar">
+                
+                
+                    <div id="xl-logo">
+                        <div>
+                            <img src="{% static 'icons/XLSX.png' %}" alt="XLSXcompareWIZ logo">
+                        </div>
+                        
+                        
+                  
+                                        
+                </div>
+                
+                 <h5 style="color: #003DB2; font-style: oblique;">{{ user.username }}</h5>
+                
+            </nav>
+        </header>
+
+        <main>
+
+
+            <div class="container">
+                <div class="main">
+                    <div class="flexbox">          
+
+
+                        <div class="second-box">
+                            <div class="right-topbox">
+                                <div class="filename">
+                                    <p class="p">
+                                        {{ name1 }}</p>
+
+                                    <!--<img src="{% static 'img/picss/x.png' %}" alt="x" class="filename-img">-->
+                                </div>
+                               <!-- <div class="second-line">
+                                    <div class="second">
+                                        <img src="{% static 'img/picss/zoom.png' %}" alt="zoom-" class="zoom-minus">
+                                        <button class="btn" 100%></button>
+                                        <img src="{% static 'img/picss/zoom +.png' %}" alt="zoom+" class="zoom-plus">
+                                        <img src="{% static 'img/picss/hand.png' %}" alt="hand" class="hand">
+                                        <img src="{% static 'img/picss/share.png' %}" alt="share" class="share">
+                                        <img src="{% static 'img/picss/download.png' %}" alt="download" class="download">
+                                    </div>
+                                </div>-->
+                            </div>
+
+                            <div class="middle-two">
+                                <div class="middle"> {{ first|safe }}</div>
+                            </div>
+
+                            <!--<div class="bottom-two">
+                                <div class="bottom">
+                                    <img class="left-arrow" src="{% static 'img/picss/left arrow.png' %}" alt="left-arrow">
+                                    <img class="right-arrow" src="{% static 'img/picss/right arrow.png' %}" alt="right-arrow">
+                                </div>
+
+                            </div>-->
+                            
+                            
+                           
+                            
+                            
+                        </div>
+                        
+
+                    </div>
+                
+            </div>
+            <div class="match">
+                <div class="duplicates">
+                    <h5>Duplicates Found&nbsp;&nbsp;&nbsp; <bold class="lead">{{ sim }}</bold></h5>
+        
+                    <h5>Differences Found&nbsp;&nbsp;&nbsp; <bold class="lead">{{ diff }}</bold></h5>
+                    
+                    
+                 </div>
+                 <form method="post" >
+                    {% csrf_token %}
+                   <div class="download-one">
+                      <button id="download" name="down" value="download" download>download</button>
+                      
+                    </div>
+                   
+                
+                   
+                </form>
+            </div>
+            
+        </div>
+        
+        </main>
+        <footer class="btn1">
+            <div id="xl-sweep-logo">
+                <img src="{% static 'icons/XLSX.png' %}" alt="XLSXcompareWIZ logo">
+            </div>
+
+
+            <div class="footer-top">
+                <ul>
+                    <li><a href="{% url 'Accounts-home' %}" class="index">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <ul>
+                    <li ><a href="#" class="lit">Terms & Conditions</a></li>
+        
+            
+                 <li>
+                      <a href="#" class="lit">Privacy Policy</a>
+                 </li>
+             </ul>
+             <p class="edge">XLSX CompareWIZ 2022. All rights reserved.</p>
+            </div>
+      </footer>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XLSX COMPARE | SIGN IN</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="{% static 'icons/XLSX.png' %}" alt="">
+            </div>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="../">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="signin-up">
+                <span class="sign-in"><a href="../register">Sign Up</a></span>
+            </div>
+        </div>
+        <div class="loginForm">
+            <div class="logo-img">
+                <img class="icon" src="{% static 'images/spreadsheet2.png' %}" alt="">
+            </div>
+            <div class="login-data">
+                <h1>Welcome Back</h1>
+                <P class="login-text">Login to your account for free</P>
+                <form name="signin" onsubmit="" action="#" method = "POST">
+                    {% csrf_token %}
+                    <div style = "text-align: center;">
+                        {% for message in messages %}
+                        <h3 style = "color:blueviolet">{{message}}</h3>
+                        {% endfor %}
+                    </div>
+                    <div class="field-group">
+                        <!-- <label for="email">Username</label>
+                        <input type="text" id="email" name="Username" required> -->
+                        <label class="reg-text" for="Username"><strong>Username</strong></label>
+                        {{ form.username }}
+                    </div>
+                    <div class="field-group">
+                        <!-- <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required> -->
+                    
+                        <label class="reg-text" for="password"><strong>Password</strong></label>
+                        {{ form.password }}
+
+                        <small class="error" aria-live="polite"></small>
+                        <label class="reg-text" for="Remember me">Remember me</label>
+                        {{ form.remember_me }}
+
+                        </div>
+                    <span>FORGOT PASSWORD?</span>
+                    <button type="submit" name="submit" value="submit" class="login">Login</button>
+                    <p>Dont have an account? <a href="../register">Sign Up</a></p>
+                    <small>--- or ---</small>
+                    <div class="google">
+                        <button type="button" class="login-with-google-btn" >
+                            Continue with Google
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

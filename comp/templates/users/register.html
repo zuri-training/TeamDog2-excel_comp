@@ -1,0 +1,114 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XLSX COMPARE | SIGN UP</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="{% static 'icons/XLSX.png' %}" alt="">
+            </div>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="../">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="signin-up">
+                <span class="sign-in"><a href="../login">Sign In</a></span>
+            </div>
+        </div>
+        <div class="signUpForm">
+            <div class="logo-img">
+                <img class="icon" src="{% static 'images/Hero Image.png' %}" alt="">
+            </div>
+            <div class="signup-data">
+                <h1>SIGN UP</h1>
+                <P class="create">create an account for free</P>
+                <button type="button" class="login-with-google-btn" >
+                    Sign in with Google
+                </button>
+                <p>---- or ----</p>
+                <!-- <form name="SignUP" onsubmit="" action="#" method = "POST">
+                    {% csrf_token %}
+                    <div style = "text-align: center;">
+                        {% for message in messages %}
+                        <h3 style = "color:blueviolet">{{message}}</h3>
+                        {% endfor %}
+                    </div> -->
+                    <form method="POST">
+                        {% csrf_token %}
+                        {% if form.errors %}
+                            <div class="alert alert-danger alert-dismissible" role="alert">
+                                <div id="form_errors">
+                                    {% for key, value in form.errors.items %}
+                                        <strong>{{ value }}</strong>
+                                    {% endfor %}
+                                </div>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        {% endif %}
+
+
+                    <div class="field-group">
+                        <!-- <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" required> -->
+                        <label class="small mb-1">First Name</label>
+                        {{ form.first_name }}
+                    </div>
+                    <div class="field-group">
+                        <!-- <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname" required> -->
+                        <label class="small mb-1">Last Name</label>
+                                            {{ form.last_name }}
+                    </div>
+                    <div class="field-group">
+                        <!-- <label for="username">UserName</label>
+                        <input type="text" id="username" name="username" required> -->
+                        <label class="small mb-1">Username</label>
+                                            {{ form.username }}
+                    </div>
+                    <div class="field-group">
+                        <!-- <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required> -->
+                        <label class="small mb-1">Email</label>
+                                            {{ form.email }}
+                    </div>
+                    <div class="field-group">
+                        <!-- <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required> -->
+                        <label class="small mb-1">Password</label>
+                        {{ form.password1 }}
+                        {{ form.errors.password }}
+                    </div>
+                    <div class="field-group">
+                        <!-- <label for="password_confirm">Retype Password</label>
+                        <input type="password" id="password_confirm" name="password_confirm" required> -->
+                        {{ form.password2 }}
+                        <button type="submit" name="submit" value="submit" class="create-account">Create Account</button>
+                    </div>
+
+                    <div class="others-form">
+                        <p class="agree">By creating an accont, you agree to our <span>Terms Of Use</span> and <span>Privacy Policy</span></p>
+                        <p class="signin">Already have an account? <a href="../login">Sign In</a></p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        {% endblock content %}
+    </div>
+</body>
+</html>
