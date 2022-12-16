@@ -792,6 +792,7 @@ footer .others .copyright{
     .home img{
         width: 600px;
         margin: 0px;
+        opacity: 0;
 
     }
     .signin-up{
